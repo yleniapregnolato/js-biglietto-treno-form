@@ -48,6 +48,21 @@ sendBtnElem.addEventListener("click", function () {
         const basePrice = distanceValue * 0.21; //number
         console.log(basePrice);
 
+        let discount = 0;
+
+        if (ageValue < 18) {
+            discount = 20;
+        } else if (ageValue > 65) {
+            discount = 40;
+        }
+        console.log("sconto", discount);
+
+        const totalDiscount = (basePrice * discount / 100); //number
+        console.log("sconto in €", totalDiscount);
+
+        const finalPrice = basePrice - totalDiscount; //number
+        console.log("prezzo finale", finalPrice);
+
         //se i dati sono validi
     } else {
         //nel caso i dati non solo i validi
