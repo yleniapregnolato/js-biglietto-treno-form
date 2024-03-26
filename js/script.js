@@ -51,6 +51,7 @@ sendBtnElem.addEventListener("click", function () {
         //se i dati sono validi
     } else {
         //nel caso i dati non solo i validi
+        alert("dati errati");
         console.log("i dati non sono validi");
     }
 
