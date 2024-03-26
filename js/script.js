@@ -80,8 +80,7 @@ sendBtnElem.addEventListener("click", function () {
           <dt>Prezzo finale</dt>
           <dd>€ ${finalPrice.toFixed(2) /* string */}</dd>
         </dl>
-`;
-
+`;      
         console.log(resultMessage);
 
         document.getElementById("result").innerHTML = resultMessage;
