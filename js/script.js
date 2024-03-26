@@ -45,6 +45,7 @@ sendBtnElem.addEventListener("click", function () {
 
         //esecuzione logica
 
+        //se i dati sono validi
         const basePrice = distanceValue * 0.21; //number
         console.log(basePrice);
 
@@ -63,11 +64,35 @@ sendBtnElem.addEventListener("click", function () {
         const finalPrice = basePrice - totalDiscount; //number
         console.log("prezzo finale", finalPrice);
 
-        //se i dati sono validi
+        //OUTPUT
+        const resultMessage = `
+        <dl>
+          <dt>Nome passeggero</dt>
+          <dd>${nameValue /* string */}</dd>
+
+          <dt>Prezzo base:</dt>
+          <dd>€ ${basePrice.toFixed(2) /* string */}</dd>
+
+          <dt>Sconto:</dt>
+          <dd>${discount /* number */} % (€ ${totalDiscount.toFixed(2)})
+          </dd>
+
+          <dt>Prezzo finale</dt>
+          <dd>€ ${finalPrice.toFixed(2) /* string */}</dd>
+        </dl>
+`;
+
+        console.log(resultMessage);
+
+        document.getElementById("result").innerHTML = resultMessage;
+
+
     } else {
-        //nel caso i dati non solo i validi
+        //nel caso i dati non siano validi
         alert("dati errati");
         console.log("i dati non sono validi");
+
+
     }
 
 
