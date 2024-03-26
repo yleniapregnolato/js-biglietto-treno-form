@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>biglietto treno form</title>
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    
+    <div>
+        <label for="username">Nome passeggero</label>
+        <input type="text" id="username">
+    </div>
+
+    <div>
+        <label for="userage">Età del passegero</label>
+        <input type="text" id="userage">
+    </div>
+
+    <div>
+        <label for="distance">distanza in km</label>
+        <input type="text" id="distance">
+    </div>
+
+    <button id="send.btn">Genera</button>
+    <button id="stop">Annulla</button>
+
+   <div id="result"></div>
+
     <script src="./js/script.js"></script>
 </body>
 </html>
